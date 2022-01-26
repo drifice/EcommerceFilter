@@ -1,4 +1,5 @@
-package BlogDemoFormation.beans;
+package beans;
+
 
 public class Article {
 	private String titre;

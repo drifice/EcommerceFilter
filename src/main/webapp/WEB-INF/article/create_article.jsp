@@ -1,5 +1,6 @@
-<%@page import="BlogDemoFormation.beans.Utilisateur"%>
-<%@page import="BlogDemoFormation.beans.Article"%>
+
+<%@page import="beans.Article"%>
+<%@page import="beans.Utilisateur"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>

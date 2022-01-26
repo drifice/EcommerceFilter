@@ -1,11 +1,11 @@
-package BlogDemoFormation.servlets;
+package servlets;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import BlogDemoFormation.beans.Article;
-import BlogDemoFormation.beans.Utilisateur;
+import beans.Article;
+import beans.Utilisateur;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpSession;
 @WebServlet("/articles")
 public class ArticleServlet extends HttpServlet {
 	
-	private List<Article> articles = new ArrayList<Article>();
+	private List<beans.Article> articles = new ArrayList<beans.Article>();
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -39,13 +39,13 @@ public class ArticleServlet extends HttpServlet {
 		String auteur = req.getParameter("auteur");	
 		String message; 
 		HttpSession session = req.getSession();
-		List<Utilisateur> auteurs = (List<Utilisateur>) session.getAttribute("utilisateurs");
+		List<beans.Utilisateur> auteurs = (List<Utilisateur>) session.getAttribute("utilisateurs");
 		
 		if (titre.trim().isEmpty() || description.trim().isEmpty() || contenu.trim().isEmpty() || auteur.trim().isEmpty()) {
 			message = "Merci de remplir tout les champs !";
 			req.setAttribute("message", message);
 		} else {
-			Article article = new Article(); 
+			beans.Article article = new Article(); 
 			article.setTitre(titre);
 			article.setContenu(contenu);
 			article.setDescription(description);

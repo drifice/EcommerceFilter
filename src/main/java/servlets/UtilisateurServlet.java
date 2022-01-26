@@ -1,10 +1,10 @@
-package BlogDemoFormation.servlets;
+package servlets;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import BlogDemoFormation.beans.Utilisateur;
+import beans.Utilisateur;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

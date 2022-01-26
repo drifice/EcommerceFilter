@@ -1,4 +1,4 @@
-package BlogDemoFormation.beans;
+package beans;
 
 public class Utilisateur {
 	private String nom;
