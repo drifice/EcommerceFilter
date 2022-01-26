@@ -2,13 +2,24 @@ package beans;
 
 
 public class Article {
+	
 	private String titre;
 	private String description;
 	private String contenu;
 	private Utilisateur auteur;
+	private Categorie categorie ;
+	
 	public Article() {}
+	
 	public String getTitre() {
 		return titre;
+	}
+	
+	public Categorie getCategorie() {
+		return categorie;
+	}
+	public void setCategorie(Categorie categorie) {
+		this.categorie = categorie;
 	}
 	public void setTitre(String titre) {
 		this.titre = titre;

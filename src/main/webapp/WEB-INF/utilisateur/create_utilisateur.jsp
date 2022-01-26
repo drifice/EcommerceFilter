@@ -11,7 +11,7 @@
 </head>
 <body>
 	<h1>Ajouter un utilisateur</h1>
-	<a href="/BlogDemoFormation/articles">Voir les articles</a>
+	<a href="/ECommerceFliter/articles">Voir les articles</a>
 	<br>
 	<%@ include file="/WEB-INF/generic/message.jsp" %>
 	<form action="" method="post">
